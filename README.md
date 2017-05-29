@@ -12,7 +12,9 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 
 ## References
 ### Various
-|       |          |
+
+|  | |
+|--- | ----- |
 | vd    | void     |
 | len   | length   |
 | over  | override |
@@ -21,6 +23,9 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | new   | new      |
 
 ### Vibe.d log
+
+|  | |
+|--- | ----- |
 | logd  | logDebug      |
 | logdi | logDiagnostic |
 | logi  | logInfo       |
@@ -29,23 +34,25 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 
 
 ### Import
+|  | |
+|--- | ----- |
 | impo | import (generic) |
 | impa | import std.array |
 
 ## Unit threaded
+|  | |
+|--- | ----- |
 | seq  | shouldEqual   |
 | sinc | shouldInclude |
 
-
-
-
 ### Phobos
+
+|  | |
+|--- | ----- |
 | imm | immutable |
 | wr  | writeln   |
 | wr  | writeln   |
 | wrf | writefln  |
-
-
 
 ### Branches
 
@@ -58,4 +65,3 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 ### Metaprogramming and conditional compilation
 ### Operators
 ### DDoc and comments
-
