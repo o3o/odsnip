@@ -100,6 +100,12 @@ snippet sup "super (sup)" b
 super(${1:/*args*/});
 endsnippet
 
+# New module
+snippet module "New module (module)" b
+module ${0}
+
+${1}
+endsnippet
 # ------------------
 # vibe.d log
 # ------------------
@@ -262,17 +268,14 @@ writeln(${1:${VISUAL}});
 ${0}
 endsnippet
 
-# Writeln debugging: type a comma-separated list of values to create a writeln()
-# that will print them along their names.
-snippet wrdbg "writeln debugging (wrdbg)"
-writeln("${1:${VISUAL}} = ", `!p snip.rv = ', \", \",'.join(t[1].split(','))`);
-${0}
-endsnippet
-
 snippet wrf "writefln (wrf)" b
 writefln("${1:/+1: format string+/}", ${2:${VISUAL}});
 ${0}
 endsnippet
+
+# ------------------
+# Conversion
+# ------------------
 
 snippet to "to!T()" w
 to!${1:/*type*/}(${2:/*arg*/})
@@ -283,22 +286,13 @@ to!(${1:/*type*/})(${2:/*arg*/})
 endsnippet
 
 snippet tos "to!string()" w
+to!string()$1
+endsnippet
+
+snippet tosa "to!string(arg)" w
 to!string(${1:/*arg*/})
 endsnippet
 
-snippet enf "enforce without exception (enf)" b
-enforce(${1:/*condition*/});
-endsnippet
-
-snippet enfe "enforce with exception (enfe)" b
-enforce(${1:/*condition*/},
-	new ${2}Exception(${3:/*args*/}));
-endsnippet
-
-snippet enfa "enforce with assegnation (enfa)" b
-enforce(${1} !is null);
-this.$1 = $1;
-endsnippet
 
 snippet format "format (format)" w
 "${1:/+1: format string+/}".format(${0:/+2: values+/})
@@ -344,6 +338,13 @@ snippet elif "else if (elif)" w
 else if (${1:/*condition*/}) {
 	${VISUAL}${0:/*code*/}
 }
+endsnippet
+
+snippet sif "static if (sif)" w
+static if (${1:/*condition*/}) {
+	${VISUAL}${2:/*code*/}
+}
+${3}
 endsnippet
 
 snippet sw "switch (sw)" b
@@ -464,16 +465,30 @@ invariant() {
 }
 endsnippet
 
+snippet enf "enforce without exception (enf)" b
+enforce(${1:/*condition*/});
+endsnippet
+
+snippet enfe "enforce with exception (enfe)" b
+enforce(${1:/*condition*/},
+	new ${2}Exception(${3:/*args*/}));
+endsnippet
+
+snippet enfa "enforce with assegnation (enfa)" b
+enforce(${1:/*condition*/} !is null);
+this.$1 = $1;
+endsnippet
+
 # ------------------
-# Functions (generic)
+# Functions 
 # ------------------
-snippet fun "function definition (fun)"
+snippet fun "function definition (fun)" b
 ${1:void} ${2:/*function name*/}(${3:/*args*/}) ${4:@safe pure nothrow} {
 	${VISUAL}${5:/*code*/}
 }
 endsnippet
 
-snippet func "void function definition (void)"
+snippet func "void function definition (void)" b
 void ${1:/*function name*/}(${2:/*args*/}) ${3:@safe pure nothrow} {
 	${VISUAL}${4:/*code*/}
 }
@@ -517,10 +532,6 @@ endsnippet
 snippet prop "@property"
 @property 
 endsnippet
-
-# ------------------
-# Functions (concrete)
-# ------------------
 
 snippet main " void main" b
 void main(string[] args) {
@@ -595,6 +606,13 @@ snippet thr "throw (thr)" w
 throw new ${1}Exception("${2}");
 endsnippet
 
+snippet exc "exception declaration (exc)" b
+class ${1}Exception: ${2}Exception {
+	public this(string msg, string file = __FILE__, int line = __LINE__) {
+		super(msg, file, line);
+	}
+}
+endsnippet
 
 # ----------------
 # Type definitions
@@ -629,18 +647,6 @@ enum ${1:name} {
 }
 endsnippet
 
-
-# ------------------
-# Exception declarations
-# ------------------
-snippet exc "exception declaration (exc)" b
-class ${1}Exception: ${2}Exception {
-	public this(string msg, string file = __FILE__, int line = __LINE__) {
-		super(msg, file, line);
-	}
-}
-endsnippet
-
 # ------------------
 # Conditional compilation
 # ------------------
@@ -653,7 +659,6 @@ endsnippet
 snippet versioni "inline version (version)" b
 version (${1:/*name*/}) ${2:/*code*/}
 endsnippet
-
 
 snippet versionl "version (linux)" b
 version (linux) {
@@ -690,25 +695,21 @@ template ${2:/*name*/}(${1:/*args*/}) {
 }
 endsnippet
 
+# ------------------
 # Asserts
-snippet ass "assert (ass)" b
+# ------------------
+snippet as "assert (as)" b
 assert(${1:false});
 endsnippet
 
-snippet assm "assert with message (assm)" b
+snippet asm "assert with message (assm)" b
 assert(${1:/*condition*/}, "${2:error message}");
 endsnippet
 
-snippet sass "static assert (sass)" b
+snippet sas "static assert (sass)" b
 static assert(${1:false});
 endsnippet
 
-snippet sif "static if (sif)" w
-static if (${1:/*condition*/}) {
-	${VISUAL}${2:/*code*/}
-}
-${3}
-endsnippet
 
 # ------------------
 # Unittests
@@ -758,10 +759,8 @@ string toString() @safe const pure nothrow {
 }
 endsnippet
 
-
-
 # ------------------
-# Comments
+# DDoc and comments
 # ------------------
 snippet fix "fix (todo)" b
 // FIX: ${1}
@@ -771,9 +770,6 @@ snippet todo "TODO (todo)" b
 // TODO: ${1}
 endsnippet
 
-# ------------------
-# DDoc
-# ------------------
 snippet sdoc "short ddoc block (sdoc)" b
 /**
 * ${1:description}
@@ -810,7 +806,7 @@ snippet fsdoc "short function ddoc block (fsdoc)" b
 */
 endsnippet
 
-snippet Pars "Params (Par)"
+snippet Pars "Params (Pars)"
 Params:
 * ${1:param} = ${2:param description}
 * ${3}
@@ -837,7 +833,10 @@ Examples:
 endsnippet
 
 
-# License blocks
+# ------------------
+# License 
+# ------------------
+
 snippet gpl "GPL (gpl)" b
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -867,9 +866,4 @@ snippet boost "Boost (boost)" b
 ${2}
 endsnippet
 
-# New module
-snippet module "New module (module)" b
-module ${2}.`!v vim_snippets#Filename('$1', 'name')`;
 
-${3}
-endsnippet
