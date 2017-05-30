@@ -13,8 +13,8 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 ## References
 ### Various
 
-|  | |
-|--- | ----- |
+|       |          |
+| ---   | -----    |
 | vd    | void     |
 | len   | length   |
 | over  | override |
@@ -24,8 +24,8 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 
 ### Vibe.d log
 
-|  | |
-|--- | ----- |
+|       |               |
+| ---   | -----         |
 | logd  | logDebug      |
 | logdi | logDiagnostic |
 | logi  | logInfo       |
@@ -40,21 +40,32 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | impa | import std.array |
 
 ## Unit threaded
-|  | |
-|--- | ----- |
+|      |               |
+| ---  | -----         |
 | seq  | shouldEqual   |
 | sinc | shouldInclude |
 
 ### Phobos
 
-|  | |
-|--- | ----- |
+|     |           |
+| --- | -----     |
 | imm | immutable |
 | wr  | writeln   |
 | wr  | writeln   |
 | wrf | writefln  |
 
 ### Branches
+|        |       |
+| ---    | ----- |
+| `case` |       |
+| `elif  |       |
+| `else  |       |
+| `fsw   |       |
+| `if    |       |
+| `if    |       |
+| `sw`   |       |
+
+
 
 ### Loops
 ### Contracts, asserts, tests

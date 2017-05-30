@@ -792,8 +792,8 @@ snippet fdoc "function ddoc block (fdoc)" b
 /**
 * ${1:description}
 *
-* ${2:Params:  ${3:param} = ${4:param description}
-*			 ${5}}
+* ${2:Params:
+* ${3:param} = ${4:param description} ${5}}
 *
 * ${6:Returns: ${7:return value}}
 *
@@ -801,21 +801,36 @@ snippet fdoc "function ddoc block (fdoc)" b
 */
 endsnippet
 
+snippet fsdoc "short function ddoc block (fsdoc)" b
+/**
+* ${1:description}
+*
+* ${2:Params:
+* ${3:param} = ${4:param description} ${5}}
+*/
+endsnippet
+
+snippet Pars "Params (Par)"
+Params:
+* ${1:param} = ${2:param description}
+* ${3}
+endsnippet
+
 snippet Par "Params (Par)"
-* Params:  ${1:param} = ${2:param description}
+${1:param} = ${2:param description}
 			${3}
 endsnippet
 
 snippet Ret "Returns (Ret)"
-* Returns:  ${1:return value/s}
+Returns:  ${1:return value/s}
 endsnippet
 
 snippet Thr "Throws (Thr)"
-* Throws:  ${1}Exception ${2}
+Throws:  ${1}Exception ${2}
 endsnippet
 
 snippet Example "Examples (Example)"
-* Examples:
+Examples:
 * --------------------
 * ${1:example code}
 * --------------------
