@@ -172,6 +172,12 @@ snippet impu "import unit_threaded (impu)" b
 import unit_threaded;
 endsnippet
 
+snippet impuv "version import unit_threaded (impu)" b
+version(unittest) {
+   import unit_threaded;
+}
+endsnippet
+
 snippet imp "import std.system (imp)" b
 import std.system;
 endsnippet
