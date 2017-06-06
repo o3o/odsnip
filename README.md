@@ -4,13 +4,11 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 [Ferdinand Majerech](https://github.com/kiith-sa/DSnips)
 
 ## Getting Started
-
 * Install [UltiSnips](https://github.com/SirVer/ultisnips#quick-start)
 * Get odsnip: `git clone https://github.com/o3o/odsnip.git``
 * Copy the ``d.snippets`` file to UltiSnips user snippets directory. On Linux this
   should be ``~/.vim/UltiSnips``.
 ## References
-
 ### Various
 |         |                               |
 | ---     | -----                         |
@@ -28,7 +26,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `super` | super(/*args*/)               |
 
 ### Vibe.d log
-
 |         |               |
 | ---     | -----         |
 | `logd`  | logDebug      |
@@ -37,23 +34,21 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `logw`  | logWarn       |
 | `loge`  | logError      |
 
-
 ### Import
-|         |                          |
-| ---     | -----                    |
-| `impo`  | import /*module*/        |
-| `pimp`  | public import /*module*/ |
-| `impa`  | import std.array         |
-| `impc`  | import std.conv;         |
-| `impe`  | import std.signals       |
-| `impex` | import std.exception     |
-| `impf`  | import std.file          |
-| `impi`  | import std.stdio         |
-| `imps`  | import std.string        |
-| `impu`  | import unit_threaded     |
-| `imp`   | import list              |
-
-
+|         |                                              |
+| ---     | -----                                        |
+| `impo`  | import /*module*/                            |
+| `pimp`  | public import /*module*/                     |
+| `impa`  | import std.array                             |
+| `impc`  | import std.conv;                             |
+| `impe`  | import std.signals                           |
+| `impex` | import std.exception                         |
+| `impf`  | import std.file                              |
+| `impi`  | import std.stdio                             |
+| `imps`  | import std.string                            |
+| `impu`  | import unit_threaded                         |
+| `impuv` | `version(unittest) { import unit_threaded }` |
+| `imp`   | import list                                  |
 
 ## Unit threaded
 |        |                           |
@@ -71,13 +66,12 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `ht`   | @HiddenTest(message)      |
 | `ut`   | @UnitTest                 |
 
-
 ### Phobos
 |         |                                 |
 | ---     | -----                           |
 | `imm`   | immutable()                     |
 | `const` | const()                         |
-| `con`   | const /*variable*/ = /*value*/  |
+| `con`   | const *variable* = *value*      |
 | `siz`   | size_t /*variable*/ = /*value*/ |
 | `wr`    | writeln()                       |
 | `wr`    | writeln()                       |
@@ -90,8 +84,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `top`  | to!(/*type*/)(/*arg*/) |
 | `tos`  | to!string()            |
 | `tosa` | to!string(/*arg*/)     |
-
-
 
 ### Branches
 |        |                                     |
@@ -107,7 +99,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `case` | case /*value*/:  break              |
 | `?:`   | /*condition*/ ? /*then*/ : /*else*/ |
 
-
 ### Loops
 |           |                                                 |
 | ---       | -----                                           |
@@ -118,8 +109,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `forever` | for (;;)                                        |
 | `fore`    | foreach (/*elem*/; /*range*/)                   |
 | `forif`   | foreach (/*elem*/; /*range*/) if(/*condition*/) |
-
-
 
 ### Contracts
 |        |                                                |
@@ -133,7 +122,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `enf`  | enforce(/*condition*/)                         |
 | `enfe` | enforce(/*condition*/,new Exception(/*args*/)) |
 | `enfa` | enforce(/*condition*/)  ans assegnation        |
-
 
 ### Functions
 |           |                                                        |
@@ -180,7 +168,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `versioniw` | version (Windows) /*code*/  |
 | `debug`     | debug                       |
 
-
 ### Template
 TO DO
 
@@ -207,10 +194,8 @@ TO DO
 | `Thr`     | Throws                    |
 | `Example` | Examples                  |
 
-
 ### License
 |         |               |
 | ---     | -----         |
 | `gpl`   | GPL License   |
 | `boost` | Boost License |
-

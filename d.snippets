@@ -172,6 +172,12 @@ snippet impu "import unit_threaded (impu)" b
 import unit_threaded;
 endsnippet
 
+snippet impuv "version import unit_threaded (impu)" b
+version(unittest) {
+   import unit_threaded;
+}
+endsnippet
+
 snippet imp "import std.system (imp)" b
 import std.system;
 endsnippet
@@ -789,8 +795,8 @@ snippet fdoc "function ddoc block (fdoc)" b
 * ${1:description}
 *
 * ${2:Params:
-* ${3:param} = ${4:param description} ${5}}
-*
+*  ${3:param} = ${4:param description} ${5}}
+*  
 * ${6:Returns: ${7:return value}}
 *
 * ${8:Throws:  ${9}Exception ${10}}
