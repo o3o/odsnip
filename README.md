@@ -9,34 +9,33 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 * Get odsnip: `git clone https://github.com/o3o/odsnip.git``
 * Copy the ``d.snippets`` file to UltiSnips user snippets directory. On Linux this
   should be ``~/.vim/UltiSnips``.
-
 ## References
-### Various
 
-|       |                                 |
-| ---   | -----                           |
-| `vd`    | void                            |
-| `len`   | length                          |
-| `over`  | override                        |
-| `al`    | alias                           |
-| `mixin` | mixin                           |
-| `new`   | new                             |
-| `pub`   | public                          |
-| `priv`  | private                         |
-| `ret`   | return                          |
-| `rett`  | return /value to return*/       |
-| `auto`  | auto /*variable*/ = /*value*/   |
-| `super` | super(/*args*/)                 |
+### Various
+|         |                               |
+| ---     | -----                         |
+| `vd`    | void                          |
+| `len`   | length                        |
+| `over`  | override                      |
+| `al`    | alias                         |
+| `mixin` | mixin                         |
+| `new`   | new                           |
+| `pub`   | public                        |
+| `priv`  | private                       |
+| `ret`   | return                        |
+| `rett`  | return /value to return*/     |
+| `auto`  | auto /*variable*/ = /*value*/ |
+| `super` | super(/*args*/)               |
 
 ### Vibe.d log
 
-|        |               |
-| ---    | -----         |
-| `logd` | logDebug      |
-| `logdi`  | logDiagnostic |
-| `logi`   | logInfo       |
-| `logw`   | logWarn       |
-| `loge`   | logError      |
+|         |               |
+| ---     | -----         |
+| `logd`  | logDebug      |
+| `logdi` | logDiagnostic |
+| `logi`  | logInfo       |
+| `logw`  | logWarn       |
+| `loge`  | logError      |
 
 
 ### Import
@@ -57,8 +56,8 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 
 
 ## Unit threaded
-|      |                           |
-| ---  | -----                     |
+|        |                           |
+| ---    | -----                     |
 | `seq`  | shouldEqual               |
 | `saeq` | shouldApproxEqual(/*to*/) |
 | `sinc` | shouldInclude(/*item*/)   |
