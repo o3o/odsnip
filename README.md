@@ -10,20 +10,24 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
   should be ``~/.vim/UltiSnips``.
 ## References
 ### Various
-|         |                               |
-| ---     | -----                         |
-| `vd`    | void                          |
-| `len`   | length                        |
-| `over`  | override                      |
-| `al`    | alias                         |
-| `mixin` | mixin                         |
-| `new`   | new                           |
-| `pub`   | public                        |
-| `priv`  | private                       |
-| `ret`   | return                        |
-| `rett`  | return /value to return*/     |
-| `auto`  | auto /*variable*/ = /*value*/ |
-| `super` | super(/*args*/)               |
+|          |                               |
+| ---      | -----                         |
+| `vd`     | void                          |
+| `len`    | length                        |
+| `over`   | override                      |
+| `al`     | alias                         |
+| `mixin`  | mixin                         |
+| `new`    | new                           |
+| `pub`    | public                        |
+| `priv`   | private                       |
+| `ret`    | return                        |
+| `rett`   | return /value to return*/     |
+| `auto`   | auto /*variable*/ = /*value*/ |
+| `super`  | super(/*args*/)               |
+| `format` | format(/*values*/)            |
+| `module` | module                        |
+| `with`   | with ()                       |
+| `scope`  | scope (exit)                  |
 
 ### Vibe.d log
 |         |               |
@@ -50,7 +54,7 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `impuv` | `version(unittest) { import unit_threaded }` |
 | `imp`   | import list                                  |
 
-## Unit threaded
+### Unit threaded
 |        |                           |
 | ---    | -----                     |
 | `seq`  | shouldEqual               |
@@ -77,7 +81,7 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `wr`    | writeln()                       |
 | `wrf`   | writefln()                      |
 
-## Conversion
+### Conversion
 |        |                        |
 | ---    | -----                  |
 | `to`   | to!/*type*/(/*arg*/)   |
@@ -139,6 +143,12 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `main`    | void main(string[] args)                               |
 | `maini`   | int main(string[] args)                                |
 
+### Signal
+|          |                                   |
+| ---      | -----                             |
+| `signal` | mixin Signal!(/*args*/) /*name*/; |
+| `emit`   | emit(/*arg*/);                    |
+
 ### Exception handling
 |         |                         |
 | ---     | -----                   |
@@ -169,7 +179,9 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `debug`     | debug                       |
 
 ### Template
-TO DO
+|        |                             |
+| ---    | -----                       |
+| `temp` | template /*name*/(/*args*/) |
 
 ### Assert
 |       |                                        |

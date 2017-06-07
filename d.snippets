@@ -100,12 +100,28 @@ snippet sup "super (sup)" b
 super(${1:/*args*/});
 endsnippet
 
-# New module
+snippet format "format (format)" w
+"${1:/*format string*/}".format(${0:/*values*/})
+endsnippet
+
 snippet module "New module (module)" b
-module ${0}
+module ${0:/*name*/}
 
 ${1}
 endsnippet
+
+snippet with "with (with)"
+with (${1}) {
+	${VISUAL}${2:/*code*/}
+}
+endsnippet
+
+snippet scope "scope (scope)" b
+scope (${1:exit}) {
+	${VISUAL}${2:/*code*/}
+}
+endsnippet
+
 # ------------------
 # vibe.d log
 # ------------------
@@ -282,7 +298,6 @@ endsnippet
 # ------------------
 # Conversion
 # ------------------
-
 snippet to "to!T()" w
 to!${1:/*type*/}(${2:/*arg*/})
 endsnippet
@@ -299,10 +314,6 @@ snippet tosa "to!string(arg)" w
 to!string(${1:/*arg*/})
 endsnippet
 
-
-snippet format "format (format)" w
-"${1:/+1: format string+/}".format(${0:/+2: values+/})
-endsnippet
 
 # ------------------
 # Branches
@@ -553,7 +564,7 @@ int main(string[] args) {
 endsnippet
 
 # ------------------
-# Mixins
+# Signal
 # ------------------
 snippet signal "signal (signal)" b
 mixin Signal!(${1:/*args*/}) ${2:/*name*/};
@@ -563,23 +574,6 @@ snippet emit "emit" w
 emit(${1:/*arg*/});
 endsnippet
 
-# ------------------
-# Scope
-# ------------------
-snippet scope "scope (scope)" b
-scope (${1:exit}) {
-	${VISUAL}${2:/*code*/}
-}
-endsnippet
-
-# ------------------
-# With
-# ------------------
-snippet with "with (with)"
-with (${1}) {
-	${VISUAL}${2:/*code*/}
-}
-endsnippet
 
 # ------------------
 # Exception handling
@@ -708,7 +702,7 @@ snippet as "assert (as)" b
 assert(${1:false});
 endsnippet
 
-snippet asm "assert with message (assm)" b
+snippet asm "assert with message (asm)" b
 assert(${1:/*condition*/}, "${2:error message}");
 endsnippet
 
