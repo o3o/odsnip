@@ -9,25 +9,28 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 * Copy the ``d.snippets`` file to UltiSnips user snippets directory. On Linux this
   should be ``~/.vim/UltiSnips``.
 ## References
-### Various
+### Language
 |          |                               |
 | ---      | -----                         |
-| `vd`     | void                          |
-| `len`    | length                        |
-| `over`   | override                      |
 | `al`     | alias                         |
+| `auto`   | auto /*variable*/ = /*value*/ |
+| `cast`   | cast(/type*/)                 |
+| `con`    | const *variable* = *value*    |
+| `const`  | const()                       |
+| `format` | format(/*values*/)            |
+| `len`    | length                        |
 | `mixin`  | mixin                         |
+| `module` | module                        |
 | `new`    | new                           |
-| `pub`    | public                        |
+| `over`   | override                      |
 | `priv`   | private                       |
+| `pub`    | public                        |
 | `ret`    | return                        |
 | `rett`   | return /value to return*/     |
-| `auto`   | auto /*variable*/ = /*value*/ |
-| `super`  | super(/*args*/)               |
-| `format` | format(/*values*/)            |
-| `module` | module                        |
-| `with`   | with ()                       |
 | `scope`  | scope (exit)                  |
+| `super`  | super(/*args*/)               |
+| `vd`     | void                          |
+| `with`   | with ()                       |
 
 ### Vibe.d log
 |         |               |
@@ -41,18 +44,18 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 ### Import
 |         |                                              |
 | ---     | -----                                        |
-| `impo`  | import /*module*/                            |
-| `pimp`  | public import /*module*/                     |
+| `imp`   | import list                                  |
 | `impa`  | import std.array                             |
 | `impc`  | import std.conv;                             |
 | `impe`  | import std.signals                           |
 | `impex` | import std.exception                         |
 | `impf`  | import std.file                              |
 | `impi`  | import std.stdio                             |
+| `impo`  | import /*module*/                            |
 | `imps`  | import std.string                            |
 | `impu`  | import unit_threaded                         |
 | `impuv` | `version(unittest) { import unit_threaded }` |
-| `imp`   | import list                                  |
+| `pimp`  | public import /*module*/                     |
 
 ### Unit threaded
 |        |                           |
@@ -74,8 +77,6 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 |         |                                 |
 | ---     | -----                           |
 | `imm`   | immutable()                     |
-| `const` | const()                         |
-| `con`   | const *variable* = *value*      |
 | `siz`   | size_t /*variable*/ = /*value*/ |
 | `wr`    | writeln()                       |
 | `wr`    | writeln()                       |

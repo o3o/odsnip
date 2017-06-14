@@ -1,5 +1,5 @@
 # ------------------
-# Simple shortcuts
+# Language
 # ------------------
 priority -50
 
@@ -92,6 +92,10 @@ snippet con "const (con)" b
 const ${1:/*variable*/} = ${2:/*value*/};
 endsnippet
 
+snippet const "const()" i
+const(${1:${VISUAL}})
+endsnippet
+
 snippet siz "size_t (siz)" b
 size_t ${1:/*variable*/} = ${2:/*value*/};
 endsnippet
@@ -120,6 +124,10 @@ snippet scope "scope (scope)" b
 scope (${1:exit}) {
 	${VISUAL}${2:/*code*/}
 }
+endsnippet
+
+snippet cast "cast()" i
+cast(${1:/*args*/});
 endsnippet
 
 # ------------------
@@ -275,10 +283,6 @@ endsnippet
 # ------------------
 snippet imm "immutable()" i
 immutable(${1:${VISUAL}})
-endsnippet
-
-snippet const "const()" i
-const(${1:${VISUAL}})
 endsnippet
 
 snippet tup "tuple (tup)"
