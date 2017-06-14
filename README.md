@@ -25,6 +25,8 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `over`   | override                      |
 | `priv`   | private                       |
 | `pub`    | public                        |
+| `publ`   | public: /*memeber*/           |
+| `pubb`   | public {/*memeber*/}          |
 | `ret`    | return                        |
 | `rett`   | return /value to return*/     |
 | `scope`  | scope (exit)                  |
