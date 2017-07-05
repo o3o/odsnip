@@ -240,6 +240,7 @@ endsnippet
 snippet seq "shouldEqual (seq)" w
 shouldEqual(${1:/*to*/});
 endsnippet
+
 snippet saeq "shouldApproxEqual (seq)" w
 shouldApproxEqual(${1:/*to*/});
 endsnippet
@@ -270,6 +271,18 @@ endsnippet
 
 snippet sth "shouldThrow (sth)" w
 shouldThrow!${1:Exception};
+endsnippet
+
+snippet sgt "shouldBeGreaterThan (sgh)" w
+shouldBeGreaterThan!${1:/*to*/};
+endsnippet
+
+snippet sst "shouldBeSmallerThan (sst)" w
+shouldBeSmallerThan!${1:/*to*/};
+endsnippet
+
+snippet ssj "shouldBeSameJsonAs (ssh)" w
+shouldBeSameJsonAs!${1:/*to*/};
 endsnippet
 
 snippet snth "shouldNotThrow (snth)" w

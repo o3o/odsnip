@@ -69,6 +69,9 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `st`   | shouldBeTrue              |
 | `sf`   | shouldBeFalse             |
 | `sn`   | shouldBeNull              |
+| `sgt`  | shouldBeGreaterThan       |
+| `sst`  | shouldBeSmallerThan       |
+| `ssj`  | shouldBeSameJsonAs        |
 | `snn`  | shouldNotBeNull           |
 | `sth`  | shouldThrow!Exception     |
 | `snth` | shouldNotThrow!Exception  |
