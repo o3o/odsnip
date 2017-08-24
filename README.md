@@ -116,8 +116,9 @@ odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snip
 | `wh`      | while (/*condition*/)                           |
 | `for`     | for (size_t i = 0; i < count; ++i)              |
 | `fori`    | for (int i = 0; i < count; ++i)                 |
-| `forever` | for (;;)                                        |
 | `fore`    | foreach (/*elem*/; /*range*/)                   |
+| `forei`   | foreach (i; 0 .. /*max*/)                       |
+| `forever` | for (;;)                                        |
 | `forif`   | foreach (/*elem*/; /*range*/) if(/*condition*/) |
 
 ### Contracts

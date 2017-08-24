@@ -202,7 +202,7 @@ snippet impu "import unit_threaded (impu)" b
 import unit_threaded;
 endsnippet
 
-snippet impuv "version import unit_threaded (impu)" b
+snippet impuv "version import unit_threaded (impuv)" b
 version(unittest) {
    import unit_threaded;
 }
@@ -458,6 +458,12 @@ endsnippet
 
 snippet fore "foreach (fore)" b
 foreach (${1:/*elem*/}; ${2:/*range*/}) {
+	${VISUAL}${0:/*code*/}
+}
+endsnippet
+
+snippet forei "foreach 0 .. N (forei)" b
+foreach (i; 0 .. ${1:/*max*/}) {
 	${VISUAL}${0:/*code*/}
 }
 endsnippet
