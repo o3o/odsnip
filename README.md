@@ -1,13 +1,14 @@
 # odnsnip - my  UltiSnips snippets for D
 
-odsnips is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snippets for the D programming language based on work of
+odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snippets for the D programming language based on work of
 [Ferdinand Majerech](https://github.com/kiith-sa/DSnips)
 
 ## Getting Started
 * Install [UltiSnips](https://github.com/SirVer/ultisnips#quick-start)
-* Get odsnip: `git clone https://github.com/o3o/odsnip.git``
-* Copy the ``d.snippets`` file to UltiSnips user snippets directory. On Linux this
-  should be ``~/.vim/UltiSnips``.
+* Get odsnip: `git clone https://github.com/o3o/odsnip.git`
+* Copy the `d.snippets` file to UltiSnips user snippets directory. On Linux this
+  should be `~/.vim/UltiSnips`.
+
 ## References
 ### Language
 |          |                               |
