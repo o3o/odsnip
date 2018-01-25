@@ -15,7 +15,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | ---      | -----                         |
 | `al`     | alias                         |
 | `auto`   | auto /*variable*/ = /*value*/ |
-| `cast`   | cast(/type*/)                 |
+| `cast`   | cast(/*type*/)                |
 | `con`    | const *variable* = *value*    |
 | `const`  | const()                       |
 | `format` | format(/*values*/)            |
