@@ -166,35 +166,35 @@ snippet lt "trace (lt)" b
 trace("${1:/*msg*/}");
 endsnippet
 snippet ltf "trace format (ltf)" b
-tracef("${1:/*msg*/}");
+tracef("${1:/*msg*/}", ${2:/*arg*/});
 endsnippet
 
 snippet li "info (li)" b
 info("${1:/*msg*/}");
 endsnippet
 snippet lif "info format (lif)" b
-infof("${1:/*msg*/}");
+infof("${1:/*msg*/}", ${2:/*arg*/});
 endsnippet
 
 snippet lw "warning (lw)" b
 warning("${1:/*msg*/}");
 endsnippet
 snippet lwf "warning format (lwf)" b
-warningf("${1:/*msg*/}");
+warningf("${1:/*msg*/}", ${2:/*arg*/});
 endsnippet
 
 snippet le "error (le)" b
 error("${1:/*msg*/}");
 endsnippet
 snippet lef "error format (lef)" b
-errorf("${1:/*msg*/}");
+errorf("${1:/*msg*/}", ${2:/*arg*/});
 endsnippet
 
 snippet lc "critical (lc)" b
 critical("${1:/*msg*/}");
 endsnippet
 snippet lcf "critical format (lcf)" b
-criticalf("${1:/*msg*/}");
+criticalf("${1:/*msg*/}", ${2:/*arg*/});
 endsnippet
 
 # ------------------
