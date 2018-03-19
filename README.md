@@ -29,7 +29,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `publ`   | public: /*memeber*/           |
 | `pubb`   | public {/*memeber*/}          |
 | `ret`    | return                        |
-| `rett`   | return /value to return*/     |
+| `rett`   | return /*value to return*/     |
 | `scope`  | scope (exit)                  |
 | `super`  | super(/*args*/)               |
 | `vd`     | void                          |
@@ -43,6 +43,20 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `logi`  | logInfo       |
 | `logw`  | logWarn       |
 | `loge`  | logError      |
+
+### Phobos experimental log
+|       |           |
+| ---   | -----     |
+| `lt`  | trace     |
+| `ltf` | tracef    |
+| `li`  | info      |
+| `lif` | infof     |
+| `lw`  | warning   |
+| `lwf` | warningf  |
+| `le`  | error     |
+| `lef` | errorf    |
+| `lc`  | critical  |
+| `lcf` | criticalf |
 
 ### Import
 |         |                                              |
