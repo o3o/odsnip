@@ -154,6 +154,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | ---       | -----                                                  |
 | `fun`     | /*ret*/ /*function name*/(/*args*/) @safe pure nothrow |
 | `func`    | void /*function name*/(/*args*/) @safe pure nothrow    |
+| `bar`     | /*ret*/ /*function name*/(/*args*/)                    |
 | `this`    | this(/*args*/)                                         |
 | `get`     | *getter property*                                      |
 | `set`     | *setter property*                                      |
@@ -172,13 +173,13 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `emit`   | emit(/*arg*/);                    |
 
 ### Exception handling
-|         |                         |
-| ---     | -----                   |
-| `try`   | try , catch             |
-| `tryf`  | try , catch and finally |
-| `catch` | catch (Exception e)     |
-| `thr`   | throw new Exception("") |
-| `exc` | Exception class declaration |
+|         |                             |
+| ---     | -----                       |
+| `try`   | try , catch                 |
+| `tryf`  | try , catch and finally     |
+| `catch` | catch (Exception e)         |
+| `thr`   | throw new Exception("")     |
+| `exc`   | Exception class declaration |
 
 ### Type definitions
 |          |           |
@@ -211,7 +212,6 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `as`  | assert(false)                          |
 | `asm` | assert(/*condition*/, "error message") |
 | `sas` | static assert(false)                   |
-|
 
 ### DDoc and comments
 |           |                           |
@@ -233,3 +233,19 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | ---     | -----         |
 | `gpl`   | GPL License   |
 | `boost` | Boost License |
+
+
+## vibe.log vs phobos experimental.logger
+
+| Vibe       | Phobos   |
+| ---        | ---      |
+| trace      |          |
+| debugV     |          |
+| debug\_    |          |
+| diagnostic | trace    |
+| info       | info     |
+| warn       | warning  |
+| error      | error    |
+| critical   | critical |
+| fatal      | fatal    |
+| none       | off      |
