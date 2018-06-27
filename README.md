@@ -61,9 +61,9 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 ### Import
 |         |                                              |
 | ---     | -----                                        |
-| `imp`   | import list                                  |
+| `imp`   | import *list*                                |
 | `impa`  | import std.array                             |
-| `impc`  | import std.conv;                             |
+| `impc`  | import std.conv                              |
 | `impe`  | import std.signals                           |
 | `impex` | import std.exception                         |
 | `impf`  | import std.file                              |
@@ -71,7 +71,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `impo`  | import /*module*/                            |
 | `imps`  | import std.string                            |
 | `impu`  | import unit_threaded                         |
-| `impuv` | `version(unittest) { import unit_threaded }` |
+| `impuv` | version(unittest) { import unit_threaded }   |
 | `pimp`  | public import /*module*/                     |
 
 ### [Unit threaded](https://github.com/atilaneves/unit-threaded)
@@ -139,7 +139,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 ### Contracts
 |        |                                                |
 | ---    | -----                                          |
-| `req`  | assert(var !is null) and assign                |
+| `req`  | assert(var !is null) *and assign*              |
 | `reqn` | assert(var !is null)                           |
 | `in`   | in                                             |
 | `out`  | out                                            |
@@ -227,6 +227,8 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `Ret`     | Returns                   |
 | `Thr`     | Throws                    |
 | `Example` | Examples                  |
+| `doff`    | // dfmt off               |
+| `don`     | // dfmt on                |
 
 ### License
 |         |               |
