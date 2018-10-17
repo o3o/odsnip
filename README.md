@@ -59,20 +59,21 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | `lcf` | criticalf |
 
 ### Import
-|         |                                              |
-| ---     | -----                                        |
-| `imp`   | import *list*                                |
-| `impa`  | import std.array                             |
-| `impc`  | import std.conv                              |
-| `impe`  | import std.signals                           |
-| `impex` | import std.exception                         |
-| `impf`  | import std.file                              |
-| `impi`  | import std.stdio                             |
-| `impo`  | import /*module*/                            |
-| `imps`  | import std.string                            |
-| `impu`  | import unit_threaded                         |
-| `impuv` | version(unittest) { import unit_threaded }   |
-| `pimp`  | public import /*module*/                     |
+|         |                                            |
+| ---     | -----                                      |
+| `imp`   | import *list*                              |
+| `impa`  | import std.array                           |
+| `impc`  | import std.conv                            |
+| `impe`  | import std.signals                         |
+| `impex` | import std.exception                       |
+| `impf`  | import std.file                            |
+| `impi`  | import std.stdio                           |
+| `impl`  | import std.experimental.logger             |
+| `impo`  | import /*module*/                          |
+| `imps`  | import std.string                          |
+| `impu`  | import unit_threaded                       |
+| `impuv` | version(unittest) { import unit_threaded } |
+| `pimp`  | public import /*module*/                   |
 
 ### [Unit threaded](https://github.com/atilaneves/unit-threaded)
 |        |                           |
