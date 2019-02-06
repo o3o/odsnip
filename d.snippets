@@ -525,10 +525,6 @@ assert(${1:var} !is null);
 this.$1 = $1;
 endsnippet
 
-snippet reqn "assert non null" b
-assert(${1:var} !is null);
-endsnippet
-
 snippet in "in contract (in)" b
 in {
 	assert(${1:/*condition*/}, "${2:error message}");
@@ -542,7 +538,7 @@ snippet out "out contract (out)" b
 endsnippet
 
 snippet body "body contract (body)" b
-} body {
+} do {
    ${1}
 }
 endsnippet
@@ -786,6 +782,10 @@ endsnippet
 
 snippet sas "static assert (sass)" b
 static assert(${1:false});
+endsnippet
+
+snippet asn "assert non null" b
+assert(${1:var} !is null);
 endsnippet
 
 

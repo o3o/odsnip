@@ -212,6 +212,7 @@ odsnip is a collection of [UltiSnips](https://github.com/SirVer/ultisnips) snipp
 | ---   | -----                                  |
 | `as`  | assert(false)                          |
 | `asm` | assert(/*condition*/, "error message") |
+| `asn` | assert(/*var !is null*/) |
 | `sas` | static assert(false)                   |
 
 ### DDoc and comments
