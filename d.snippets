@@ -593,35 +593,31 @@ endsnippet
 
 snippet get "getter property (get)"
 private ${1:/*type*/} _${2:/*member_name*/};
-@property $1 $2() { return _$2; }
+$1 $2() { return _$2; }
 endsnippet
 
 snippet set "setter property (set)"
-@property void ${1:/*member_name*/}(${2:/*type*/} value) { ${3:_$1} = value; }
+void ${1:/*member_name*/}(${2:/*type*/} value) { ${3:_$1} = value; }
 endsnippet
 
 snippet getset "getter/setter property"
 private ${1:/*type*/} _${2:/*member_name*/};
-@property $1 $2() { return _$2; }
-@property void $2($1 value) { _$2 = value; }
+$1 $2() { return _$2; }
+void $2($1 value) { _$2 = value; }
 endsnippet
 
 snippet getp "getter property (get) pure"
-@property ${1:/*type*/} ${2:/*member_name*/}() const pure nothrow {return ${3:_$2};}
+${1:/*type*/} ${2:/*member_name*/}() const pure nothrow {return ${3:_$2};}
 endsnippet
 
 snippet setp "setter property (set) pure"
-@property void ${1:/*member_name*/}(${2:/*type*/} value) pure nothrow {${3:_$1} = value;}
+void ${1:/*member_name*/}(${2:/*type*/} value) pure nothrow {${3:_$1} = value;}
 endsnippet
 
 snippet getsetp "getter/setter property pure"
 private ${1:/*type*/} _${2:/*member_name*/};
-@property $1 $2() const pure nothrow { return _$2; }
-@property void $2($1 value) pure nothrow { _$2 = value; }
-endsnippet
-
-snippet prop "@property"
-@property 
+$1 $2() const pure nothrow { return _$2; }
+void $2($1 value) pure nothrow { _$2 = value; }
 endsnippet
 
 snippet main " void main" b
