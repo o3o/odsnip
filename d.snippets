@@ -246,7 +246,7 @@ endsnippet
 
 snippet impuv "version import unit_threaded (impuv)" b
 version (unittest) {
-   import unit_threaded;
+	import unit_threaded;
 }
 endsnippet
 
@@ -533,20 +533,28 @@ this.$1 = $1;
 endsnippet
 
 snippet in "in contract (in)" b
+in ($1)
+endsnippet
+
+snippet out "out contract (in)" b
+out (result; $1)
+endsnippet
+
+snippet ina "in contract w/ assert (ina)" b
 in {
 	assert(${1:/*condition*/}, "${2:error message}");
 	${3}
 endsnippet
 
-snippet out "out contract (out)" b
-} out ${1:(result) {
+snippet outa "out contract w/ assert (outa)" b
+} out ${1:(result)} {
 	assert(${2:/*condition*/}, "${3:error message}");
 	${4}
 endsnippet
 
 snippet body "body contract (body)" b
 } do {
-   ${1}
+	${1}
 }
 endsnippet
 
@@ -918,6 +926,12 @@ endsnippet
 
 snippet doff "dfmt off (doff)" b
 // dfmt off
+endsnippet
+
+snippet copy "Copyright Microline" b
+ *	Copyright: © 2016-2026 Microline s.r.l.
+ *	License: Subject to the terms of the Microline license
+ *	Authors: Orfeo Da Vià
 endsnippet
 
 # ------------------
