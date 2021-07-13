@@ -217,7 +217,7 @@ import std.array;
 endsnippet
 
 snippet impc "import std.conv (impc)" b
-import std.conv;
+import std.conv : to;
 endsnippet
 
 snippet impe "import std.signals (impe)" b
@@ -807,7 +807,7 @@ endsnippet
 # ------------------
 snippet unittest "unittest (unittest)" b
 unittest {
-	${1:/*code*/}
+	${1}
 }
 endsnippet
 
@@ -816,28 +816,28 @@ endsnippet
 # ------------------
 snippet opDis "opDispatch (opDis)" b
 ${1:/*return type*/} opDispatch(string s)() {
-	${2:/*code*/};
+	${2};
 }
 endsnippet
 
 snippet op= "opAssign (op=)" b
 void opAssign(${1} rhs) ${2:@safe pure nothrow} {
-	${2:/*code*/}
+	${2}
 }
 endsnippet
 
 snippet opCmp "opCmp (opCmp)" b
 int opCmp(${1} rhs) @safe const pure nothrow {
-	${2:/*code*/}
+	${2}
 }
 endsnippet
 
 snippet opApply "opApply (opApply)" b
 int opApply(int delegate(ref ${1:/*iterated type/s*/}) dg) {
 	int result = 0;
-	${2:/*loop*/}
+	${2}
 	{
-		result = dg(${3:/*arg/s*/});
+		result = dg(${3});
 		if(result){break;}
 	}
 	return result;
@@ -846,7 +846,7 @@ endsnippet
 
 snippet toString "toString (toString)" b
 string toString() @safe const pure nothrow {
-	${1:/*code*/}
+	${1}
 }
 endsnippet
 
@@ -863,15 +863,15 @@ endsnippet
 
 snippet sdoc "short ddoc block (sdoc)" b
 /**
- * ${1:description}
+ * ${1}
  */
 endsnippet
 
 snippet doc "generic ddoc block (doc)" b
 /**
- * ${1:description}
+ * ${1}
  *
- * ${2:details}
+ * ${2}
  */
 endsnippet
 
