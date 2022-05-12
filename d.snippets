@@ -284,6 +284,19 @@ endsnippet
 # ------------------
 # unit_thread
 # ------------------
+snippet sh "should (sh)" w
+should 
+endsnippet
+
+snippet shn "should.not (shn)" w
+should.not 
+endsnippet
+
+snippet sht "shouldThrow (sht)" w
+shouldThrow;  
+endsnippet
+
+
 snippet seq "shouldEqual (seq)" w
 shouldEqual(${1:/*to*/});
 endsnippet
@@ -897,25 +910,25 @@ snippet fsdoc "short function ddoc block (fsdoc)" b
  */
 endsnippet
 
-snippet pars "Params (Pars)"
+snippet pars "Params (pars)"
 Params:
 *  ${1:param} = ${2:param description}
 *  ${3}
 endsnippet
 
-snippet par "Params (Par)"
+snippet par "Params (par)"
 ${1:param} = ${2:param description}
 endsnippet
 
-snippet Ret "Returns (Ret)"
+snippet rets "Returns (rets)"
 Returns:  ${1:return value/s}
 endsnippet
 
-snippet Thr "Throws (Thr)"
+snippet ths "Throws (ths)"
 Throws:  ${1}Exception ${2}
 endsnippet
 
-snippet Example "Examples (Example)"
+snippet example "Examples (example)"
 Examples:
 * --------------------
 * ${1:example code}
@@ -932,7 +945,7 @@ endsnippet
 
 snippet copy "Copyright Microline" b
 /**
- * 
+ *
  *	Copyright: © 2016-2026 Microline s.r.l.
  *	License: Subject to the terms of the Microline license
  *	Authors: Orfeo Da Vià
