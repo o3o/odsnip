@@ -285,32 +285,39 @@ endsnippet
 # unit_thread
 # ------------------
 snippet sh "should (sh)" w
-should 
+should
 endsnippet
 
 snippet shn "should.not (shn)" w
-should.not 
+should.not
 endsnippet
 
-snippet sht "shouldThrow (sht)" w
-shouldThrow;  
+snippet st "shouldThrow (sht)" w
+shouldThrow;
 endsnippet
 
+snippet ste "shouldThrow (shte)" w
+shouldThrow!${1:Exception};
+endsnippet
 
-snippet seq "shouldEqual (seq)" w
+snippet snt "shouldNotThrow (shnt)" w
+shouldNotThrow!${1:Exception};
+endsnippet
+
+snippet se "shouldEqual (she)" w
 shouldEqual(${1:/*to*/});
 endsnippet
 
-snippet saeq "shouldApproxEqual (seq)" w
+snippet sne "shouldNotEqual (shne)" w
+shouldNotEqual(${1:/*to*/});
+endsnippet
+
+snippet sa "shouldApproxEqual (sha)" w
 shouldApproxEqual(${1:/*to*/});
 endsnippet
 
-snippet sinc "shouldInclude (sinc)" w
+snippet si "shouldInclude (shi)" w
 shouldInclude(${1:/*item*/});
-endsnippet
-
-snippet sneq "shouldNotEqual (sneq)" w
-shouldNotEqual(${1:/*to*/});
 endsnippet
 
 snippet st "shouldBeTrue (st)" w
@@ -329,32 +336,20 @@ snippet snn "shouldNotBeNull (snn)" w
 shouldNotBeNull;
 endsnippet
 
-snippet sth "shouldThrow (sth)" w
-shouldThrow!${1:Exception};
-endsnippet
-
-snippet sgt "shouldBeGreaterThan (sgh)" w
+snippet sg "shouldBeGreaterThan (sgh)" w
 shouldBeGreaterThan(${1:/*to*/});
 endsnippet
 
-snippet sst "shouldBeSmallerThan (sst)" w
+snippet ss "shouldBeSmallerThan (sst)" w
 shouldBeSmallerThan(${1:/*to*/});
 endsnippet
 
-snippet ssj "shouldBeSameJsonAs (ssh)" w
+snippet sj "shouldBeSameJsonAs (ssh)" w
 shouldBeSameJsonAs(${1:/*to*/});
-endsnippet
-
-snippet snth "shouldNotThrow (snth)" w
-shouldNotThrow!${1:Exception};
 endsnippet
 
 snippet ht "HiddenTest (ht)" b
 @HiddenTest(${1:message})
-endsnippet
-
-snippet ut "UnitTest (ht)" b
-@UnitTest
 endsnippet
 
 # ------------------
