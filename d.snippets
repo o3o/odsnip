@@ -4,7 +4,7 @@
 priority -50
 
 snippet vd "void (vd)" w
-void
+void 
 endsnippet
 
 snippet len "length (len)" i
@@ -36,6 +36,11 @@ snippet spn "@safe pure nothrow (spn)"
 @safe pure nothrow
 endsnippet
 
+snippet sp "@safe pure (sp)"
+@safe pure 
+endsnippet
+
+
 snippet cont "continue (cont)" b
 continue;
 endsnippet
@@ -44,8 +49,12 @@ snippet dis "@disable (dis)" b
 @disable ${1:/*method*/};
 endsnippet
 
+snippet dep "deprecated (dep)" b
+deprecated ("${1}");
+endsnippet
+
 snippet pub "public (pub)" b
-public
+public 
 endsnippet
 
 snippet publ "public: (publ)" b
@@ -60,7 +69,7 @@ public {
 endsnippet
 
 snippet priv "private (priv)" b
-private
+private 
 endsnippet
 
 snippet privl "private (priv)" b
@@ -74,7 +83,7 @@ protected:
 endsnippet
 
 snippet pack "package (pack)" b
-package
+package 
 endsnippet
 
 snippet packl "package (pack)" b
@@ -83,7 +92,7 @@ package:
 endsnippet
 
 snippet ret "return (ret)" w
-return
+return 
 endsnippet
 
 snippet rett "return value(rett)" b
@@ -376,8 +385,8 @@ endsnippet
 # ------------------
 # Conversion
 # ------------------
-snippet to "to!T()" w
-to!${1:/*type*/}(${2:/*arg*/})
+snippet to "to!T" w
+to!${1:/*type*/}
 endsnippet
 
 snippet top "to!(T)()" w
@@ -385,12 +394,13 @@ to!(${1:/*type*/})(${2:/*arg*/})
 endsnippet
 
 snippet tos "to!string()" w
-to!string()$1
+to!string$0
 endsnippet
 
-snippet tosa "to!string(arg)" w
-to!string(${1:/*arg*/})
+snippet tod "to!double" w
+to!double$0
 endsnippet
+
 
 snippet toi "to!int()" w
 to!int$0
